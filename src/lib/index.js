@@ -2,13 +2,6 @@ import { EventEmitter } from 'events'
 import { assert } from 'chai'
 import { createPrettySerializer } from 'bunyan-serializer'
 
-const LEVEL_MAP = { 10: 'TRACE'
-                  , 20: 'DEBUG'
-                  , 30: 'INFO'
-                  , 40: 'WARN'
-                  , 50: 'ERROR'
-                  , 60: 'FATAL'
-                  }
 
 /**
  * Bunyan writable stream that writes logs to pmx.
