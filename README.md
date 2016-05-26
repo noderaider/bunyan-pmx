@@ -53,5 +53,5 @@ Name            | Type                  | Description
 `data`          | `Object (required)`   | The data callback argument from a pmx scoped action
 `res`           | `Object (required)`   | The res callback argument from a pmx scoped action
 `reply`         | `(unimplemented)`     | The reply callback argument from a pmx action (coming in future release)
-`serializer`    | `function (optional)` | A custom serializer that will be proxied arguments directly stream is written to. Defaults to a human readable format.
+`serializer`    | `function (optional)` | A custom serializer that will be proxied arguments as stream is written to. Should return the preferred string log format to be displayed on keymetrics.io. Defaults to a human readable format.
 `hijackLoggers` | `Array (optional)`    | An array of bunyan loggers that should be hijacked and rewritten to pmx stream.
